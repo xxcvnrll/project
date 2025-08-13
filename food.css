@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Paprika&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prociono&display=swap");
 
 body {
   margin: 0;
@@ -68,14 +68,16 @@ body {
   font-family: "Paprika", system-ui;
 }
 
-.black-fon{
-  background: linear-gradient(#151414,#7B7777);
+.cards {
+  background: linear-gradient(#151414, #7b7777);
   padding-top: 60px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.card-one{
-  background-color: #98CD8F;
+.card-one {
+  background-color: #98cd8f;
   width: 420px;
   height: 400px;
   margin-left: 60px;
@@ -86,17 +88,17 @@ body {
   font-weight: lighter;
 }
 
-.img1{
+.img1 {
   width: 340px;
   margin-top: 35px;
 }
 
-.button-1{
+.button-1 {
   background-color: #deddddc0;
   backdrop-filter: blur(10px);
   font-size: 20px;
   font-family: "Platypi", serif;
-  border: 2px solid  #91919193;
+  border: 2px solid #91919193;
   width: 150px;
   border-radius: 12px;
   margin-left: 30%;
@@ -104,8 +106,38 @@ body {
   text-align: center;
 }
 
-.card-two{
-  background-color: #E8E8DB;
+.card-two {
+  background-color: #e8e8db;
+  width: 420px;
+  height: 400px;
+  margin-left: 60px;
+  border-radius: 60px;
+  font-family: "Prociono", serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.img2 {
+  width: 275px;
+  margin-top: -50px;
+}
+
+.button-2 {
+  background-color: #deddddc0;
+  backdrop-filter: blur(10px);
+  font-size: 20px;
+  font-family: "Platypi", serif;
+  border: 2px solid #91919193;
+  width: 130px;
+  border-radius: 12px;
+  margin-left: 35%;
+  margin-top: 90px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.card-three {
+  background: linear-gradient(#c01c1cca, #5b0101);
   width: 420px;
   height: 400px;
   margin-left: 65px;
@@ -115,47 +147,17 @@ body {
   text-align: center;
 }
 
-.img2{
-  width: 275px;
-  margin-top: -50px;
-}
-
-.button-2{
-  background-color: #deddddc0;
-  backdrop-filter: blur(10px);
-  font-size: 20px;
-  font-family: "Platypi", serif;
-  border: 2px solid  #91919193;
-  width: 130px;
-  border-radius: 12px;
-  margin-left: 35%;
-  margin-top: 90px;
-  padding-left: 10px;
-  text-align: center;
-}
-
-.card-three{
-  background: linear-gradient(#c01c1cca,#5B0101);
-   width: 420px;
-  height: 400px;
-  margin-left: 65px;
-  border-radius: 60px;
-  font-family: "Prociono", serif;
-  font-size: 12px;
-  text-align: center;
-}
-
-.img3{
+.img3 {
   width: 340px;
   margin-top: 35px;
 }
 
-.button-3{
+.button-3 {
   background-color: #deddddc0;
   backdrop-filter: blur(10px);
   font-size: 20px;
   font-family: "Platypi", serif;
-  border: 2px solid  #91919193;
+  border: 2px solid #91919193;
   width: 130px;
   border-radius: 12px;
   margin-left: 35%;
@@ -163,28 +165,65 @@ body {
   text-align: center;
 }
 
-.card-four{
-  background: linear-gradient(#c01c1cca,#5B0101);
-   width: 420px;
+.card-four {
+  background: linear-gradient(
+    220deg,
+    rgb(185, 179, 63, 0.5) 0%,
+    #bcaf4e 40%,
+    rgba(255, 85, 13, 0.5) 90%
+  );
+  width: 420px;
   height: 400px;
-  margin-left: 65px;
+  margin-left: 60px;
+  margin-top: 50px;
   border-radius: 60px;
   font-family: "Prociono", serif;
   font-size: 12px;
   text-align: center;
 }
 
-.img4{
+.img4 {
   width: 275px;
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
-.button-4{
+.button-4 {
   background-color: #deddddc0;
   backdrop-filter: blur(10px);
   font-size: 20px;
   font-family: "Platypi", serif;
-  border: 2px solid  #91919193;
+  border: 2px solid #91919193;
+  width: 130px;
+  border-radius: 12px;
+  margin-left: 34%;
+  padding-left: 10px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.card-five {
+  background: linear-gradient(rgb(70, 158, 96,0.7),rgb(58, 89, 8, 0.8));
+  width: 420px;
+  height: 400px;
+  margin-left: 60px;
+  border-radius: 60px;
+    margin-top: 50px;
+  font-family: "Prociono", serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.img5 {
+  width: 340px;
+  margin-top: 35px;
+}
+
+.button-5 {
+  background-color: #deddddc0;
+  backdrop-filter: blur(10px);
+  font-size: 20px;
+  font-family: "Platypi", serif;
+  border: 2px solid #91919193;
   width: 130px;
   border-radius: 12px;
   margin-left: 35%;
