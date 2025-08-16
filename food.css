@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: "Georgia", serif;
-  background: url("pizza.png") center/cover no-repeat;
+  background: url("/img/pizza.png") center/cover no-repeat;
   min-height: auto;
 }
 
@@ -79,7 +79,6 @@ body {
 .card-one {
   background-color: #98cd8f;
   width: 420px;
-  height: 400px;
   margin-left: 60px;
   border-radius: 60px;
   text-align: center;
@@ -101,20 +100,42 @@ body {
   border: 2px solid #91919193;
   width: 150px;
   border-radius: 12px;
-  margin-left: 30%;
   padding-left: 10px;
   text-align: center;
+}
+
+.card-footer1 {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 0px 50px 0;
+}
+
+.heart {
+  font-size: 52px;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: black;
+}
+
+.dots {
+  font-size: 28px;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: black;
+
 }
 
 .card-two {
   background-color: #e8e8db;
   width: 420px;
-  height: 400px;
   margin-left: 60px;
   border-radius: 60px;
   font-family: "Prociono", serif;
   font-size: 12px;
   text-align: center;
+    font-weight: lighter;
+
 }
 
 .img2 {
@@ -130,16 +151,21 @@ body {
   border: 2px solid #91919193;
   width: 130px;
   border-radius: 12px;
-  margin-left: 35%;
   margin-top: 90px;
   padding-left: 10px;
   text-align: center;
 }
 
+.card-footer2 {
+  display: flex;
+  justify-content: space-between; 
+  align-items: baseline;
+  margin: 0px 50px 0;
+}
+
 .card-three {
   background: linear-gradient(#c01c1cca, #5b0101);
   width: 420px;
-  height: 400px;
   margin-left: 65px;
   border-radius: 60px;
   font-family: "Prociono", serif;
@@ -160,7 +186,6 @@ body {
   border: 2px solid #91919193;
   width: 130px;
   border-radius: 12px;
-  margin-left: 35%;
   padding-left: 10px;
   text-align: center;
 }
@@ -173,7 +198,6 @@ body {
     rgba(255, 85, 13, 0.5) 90%
   );
   width: 420px;
-  height: 400px;
   margin-left: 60px;
   margin-top: 50px;
   border-radius: 60px;
@@ -195,7 +219,6 @@ body {
   border: 2px solid #91919193;
   width: 130px;
   border-radius: 12px;
-  margin-left: 34%;
   padding-left: 10px;
   text-align: center;
   margin-top: 80px;
@@ -204,7 +227,6 @@ body {
 .card-five {
   background: linear-gradient(rgb(70, 158, 96,0.7),rgb(58, 89, 8, 0.8));
   width: 420px;
-  height: 400px;
   margin-left: 60px;
   border-radius: 60px;
     margin-top: 50px;
@@ -226,7 +248,6 @@ body {
   border: 2px solid #91919193;
   width: 130px;
   border-radius: 12px;
-  margin-left: 35%;
   padding-left: 10px;
   text-align: center;
 }
@@ -239,7 +260,6 @@ body {
     rgb(255, 0, 0, 0.8) 100%
   );
   width: 420px;
-  height: 400px;
   margin-left: 60px;
   margin-top: 50px;
   border-radius: 60px;
@@ -261,7 +281,6 @@ body {
   border: 2px solid #91919193;
   width: 130px;
   border-radius: 12px;
-  margin-left: 34%;
   padding-left: 10px;
   text-align: center;
   margin-top: 80px;
@@ -274,7 +293,6 @@ body {
     #1a9615cc 100%
   );
   width: 420px;
-  height: 400px;
   margin-left: 60px;
   margin-top: 50px;
   border-radius: 60px;
@@ -296,8 +314,77 @@ body {
   border: 2px solid #91919193;
   width: 130px;
   border-radius: 12px;
-  margin-left: 34%;
   padding-left: 10px;
   text-align: center;
   margin-top: 80px;
+}
+
+.card-eight {
+  background: linear-gradient(
+    to left,
+    rgb(30, 7, 124) 5%,
+    rgb(19, 0, 0) 100%
+  );
+  width: 420px;
+  margin-left: 60px;
+  border-radius: 60px;
+  margin-top: 50px;
+  font-family: "Prociono", serif;
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+}
+
+.img8 {
+   width: 340px;
+  margin-top: 35px;
+}
+
+.button-8 {
+  background-color: #deddddc0;
+  backdrop-filter: blur(10px);
+  font-size: 20px;
+  font-family: "Platypi", serif;
+  border: 2px solid #91919193;
+  width: 130px;
+  border-radius: 12px;
+  padding-left: 10px;
+  text-align: center;
+  color: black;
+}
+
+.card-nine {
+  background: linear-gradient(
+    to left,
+    #D49A49 0%,
+    #130000 100%
+  );
+  width: 420px;
+  margin-left: 60px;
+  margin-top: 50px;
+  border-radius: 60px;
+  font-family: "Prociono", serif;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
+
+.img9 {
+  width: 200px;
+  margin-top: -70px;
+}
+
+.button-9 {
+  background-color: #deddddc0;
+  backdrop-filter: blur(10px);
+  font-size: 20px;
+  font-family: "Platypi", serif;
+  border: 2px solid #91919193;
+  width: 130px;
+  border-radius: 12px;
+  padding-left: 10px;
+  text-align: center;
+  margin-top: 80px;
+  color: #130000;
 }
