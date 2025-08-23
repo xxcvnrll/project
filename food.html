@@ -1,109 +1,460 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>food</title>
     <link rel="stylesheet" href="food.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-  <div class="blur-card">
-    <div class="images">
-      <img src="/img/pizza-pc.png" alt="Pizza">
-      <img src="/img/burger-pc.png" alt="Burger">
+      <div class="blur-card">
+        <div class="images">
+          <img src="/img/pizza-pc.png" alt="Pizza" />
+          <img src="/img/burger-pc.png" alt="Burger" />
+        </div>
+        <div class="text">
+          <h1 class="promo">Get inspired and cook delicious food every day!</h1>
+          <p class="lead">
+            Cook like a chef! The best dishes of the day <br />are already
+            waiting for you - simple, fast<br />
+            and very tasty.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="text">
-      <h1 class="promo">Get inspired and cook delicious food every day!</h1>
-      <p class="lead">Cook like a chef! The best dishes of the day <br>are already waiting for you - simple, fast<br> and very tasty.</p> 
-    </div> 
-  </div>
-</div>
-</body>
-<div class="cards">
-  <div class="card-one"> 
-    <img class="img1" src="/img/img 1(soup).png">
-    <h1>Greek soup with pumpkin,<br> rice and feta cheese</h1>
-    <div class="card-footer1">
-       <span class="heart">♡</span>
-    <p class="button-1">40 min</p>
+  </body>
+  <div class="cards">
+    <div class="card-one">
+      <img class="img1" src="/img/img 1(soup).png" />
+      <h1>
+        Greek soup with pumpkin,<br />
+        rice and feta cheese
+      </h1>
+      <div class="card-footer1">
+        <span class="heart">♡</span>
+        <p class="button-1">40 min</p>
         <span class="dots">⋯</span>
+      </div>
     </div>
-  </div>
-  <div class="card-two">
-    <img class="img2" src="/img/img2.png">
-    <h1>Chicken soup with homemade<br> noodles</h1>
-    <div class="card-footer2">
-       <span class="heart">♡</span>
-    <p class="button-2">60 min</p>
+
+    <div id="Modal1" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- Заголовок -->
+        <h1 class="recipe-title">
+          GREEK SOUP WITH PUMPKIN, RICE AND FETA CHEESE
+        </h1>
+        <!-- Контент -->
+        <div class="recipe-body">
+          <!-- Левая колонка -->
+          <div class="ingredients">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>puff pastry – 1000g</li>
+              <li>chicken fillet – 700g</li>
+              <li>mushrooms – 700g</li>
+              <li>onion – 1 pcs</li>
+              <li>cheese – 250g</li>
+              <li>butter – 100g</li>
+            </ul>
+          </div>
+          <!-- Правая колонка (фото) -->
+          <div class="recipe-image">
+            <img
+              src="/img/img 1(soup).png"
+              alt="Strudel with chicken and mushrooms"
+            />
+          </div>
+        </div>
+        <!-- Приготовление -->
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+              Chop the mushrooms and onions, salt them and fry in oil until
+              golden brown. Let cool.
+            </li>
+            <li>
+              Boil the chicken fillet in salted water, cut into small cubes and
+              add to the mushrooms.
+            </li>
+            <li>
+              Grate the cheese, mix with mushrooms and chicken. Add sour cream.
+            </li>
+            <li>Melt the butter and spread it around the dough.</li>
+            <li>Wrap the dough into a roll, closing the edges.</li>
+            <li>
+              Bake in an oven preheated to 190 °C for 30–40 minutes until golden
+              brown.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <script src="food.js"></script>
+
+    <div class="card-two">
+      <img class="img2" src="/img/img2.png" />
+      <h1>
+        Chicken soup with homemade<br />
+        noodles
+      </h1>
+      <div class="card-footer2">
+        <span class="heart">♡</span>
+        <p class="button-2">60 min</p>
         <span class="dots">⋯</span>
+      </div>
     </div>
-  </div>
-  <div class="card-three">
-    <img class="img3" src="/img/img3.png">
-    <h1>Beef steak with mustar <br> sauce</h1>
-    <div class="card-footer1">
-       <span class="heart">♡</span>
-    <p class="button-3">15 min</p>
+
+    <div id="Modal2" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <!-- Заголовок -->
+        <h1 class="recipe-title">CHICKEN SOUP WITH HOMEMADE NOODLES</h1>
+
+        <!-- Контент -->
+        <div class="recipe-body">
+          <!-- Левая колонка -->
+          <div class="ingredients">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>onion – 2 pcs</li>
+              <li>chicken – 800g</li>
+              <li>celera – 2 pcs</li>
+              <li>water – 1.5 liter of water</li>
+              <li>green onion, parsley to taste*</li>
+            </ul>
+          </div>
+
+          <!-- Правая колонка (фото) -->
+          <div class="recipe-image2">
+            <img src="/img/img2.png" alt="CHICKEN SOUP WITH HOMEMADE NOODLES" />
+          </div>
+        </div>
+
+        <!-- Приготовление -->
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+              Place the chicken, one onion, one carrot, and celery in a
+              saucepan. Cover with water.
+            </li>
+            <li>
+              Bring to a boil, simmer chicken broth for 1.5 hours with lid on.
+            </li>
+            <li>
+              To prepare the noodles, beat 6 egg yolks and 1 egg with a whisk,
+              adding salt and water.
+            </li>
+            <li>
+              Place the dough on a board and knead for 8-10 minutes until
+              smooth.
+            </li>
+            <li>
+              Disassemble and lay out the noodles on a board and leave to dry
+              for 20-30 minutes.
+            </li>
+            <li>
+              Cut the second onion into cubes and the remaining carrots into
+              strips.
+            </li>
+            <li>
+              Add chopped carrots and onions to the broth. Add bay leaf,
+              peppercorns and salt. Cook over low heat for 10 minutes.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-three">
+      <img class="img3" src="/img/img3.png" />
+      <h1>
+        Beef steak with mustar <br />
+        sauce
+      </h1>
+      <div class="card-footer1">
+        <span class="heart">♡</span>
+        <p class="button-3">15 min</p>
         <span class="dots">⋯</span>
+      </div>
     </div>
-  </div>
-  <div class="card-four">    
-    <img class="img4" src="/img/img4.png">
-    <h1>Steak with mushrooms and sauce</h1>
-     <div class="card-footer2">
-       <span class="heart">♡</span>
-    <p class="button-4">25 min</p>
+    
+    <div id="Modal3" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">
+          BEEF STEAK WITH MUSTAR SAUSE
+        </h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>beef tenderloin – 450g</li>
+              <li>sunflower oil – 3 tablespoons</li>
+              <li>salt to taste</li>
+              <li>mustard – 2 tablespoons</li>
+              <li>garlic – 2 cloves</li>
+              <li>cream 20-33% – 2 tbsp</li>
+              <li>sugar – 1 tablespoons</li>
+              <li>cilantro – 5 springs</li>
+            </ul>
+          </div>
+          <div class="recipe-image">
+            <img
+              src="/img/img3.png"
+              alt="Strudel with chicken and mushrooms"
+            />
+          </div>
+        </div>
+        <!-- Приготовление -->
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+            Cut the meat across the grain into steaks 1-1.5 cm thick.
+            </li>
+            <li>
+              Grease each piece of beef generously with vegetable oil and rub with salt and pepper.
+            </li>
+            <li>
+              In a dry, very hot grill pan, fry the steaks for 4-5 minutes on each side. Turn off the heat and let the steaks "rest" in the pan for 3-4 minutes.
+            </li>
+            <li>
+In a frying pan with heated sunflower oil , fry the garlic, sugar, soy sauce and mustard. Stir and simmer for 1 minute.</li>
+            <li>Wrap the dough into a roll, closing the edges.</li>
+            <li>
+              Bake in an oven preheated to 190 °C for 30–40 minutes until golden
+              brown.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-four">
+      <img class="img4" src="/img/img4.png" />
+      <h1>Steak with mushrooms and sauce</h1>
+      <div class="card-footer2">
+        <span class="heart">♡</span>
+        <p class="button-4">25 min</p>
         <span class="dots">⋯</span>
+      </div>
     </div>
-  </div>
-    <div class="card-five">    
-    <img class="img5" src="/img/img5.png">
-    <h1>Funchoza with chicken, zucchini <br> and sweet pepper</h1>
-     <div class="card-footer1">
-       <span class="heart">♡</span>
-    <p class="button-5">30 min</p>
+
+ <div id="Modal4" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">STEAK WITH MUSHROOMS AND SAUSE</h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>beef steak – 4 pcs</li>
+              <li>salt – 0.5 pcs</li>
+              <li>celera – 2 pcs</li>
+              <li>garlic - 2 cloves</li>
+              <li>sunflower oil</li>
+              <li>balsamic vinegar - 2 tablespoons</li>      
+              <li>mushrooms - 240g</li>
+            </ul>
+          </div>
+          <div class="recipe-image4">
+            <img src="/img/img4.png" alt="STEAK WITH MUSHROOMS AND SAUSE" />
+          </div>
+        </div>
+        <div class="preparation4">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+              Place the chicken, one onion, one carrot, and celery in a
+              saucepan. Cover with water.
+            </li>
+            <li>
+              Bring to a boil, simmer chicken broth for 1.5 hours with lid on.
+            </li>
+            <li>
+              To prepare the noodles, beat 6 egg yolks and 1 egg with a whisk,
+              adding salt and water.
+            </li>
+            <li>
+              Place the dough on a board and knead for 8-10 minutes until
+              smooth.
+            </li>
+            <li>
+              Disassemble and lay out the noodles on a board and leave to dry
+              for 20-30 minutes.
+            </li>
+            <li>
+              Cut the second onion into cubes and the remaining carrots into
+              strips.
+            </li>
+            <li>
+              Add chopped carrots and onions to the broth. Add bay leaf,
+              peppercorns and salt. Cook over low heat for 10 minutes.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-five">
+      <img class="img5" src="/img/img5.png" />
+      <h1>
+        Funchoza with chicken, zucchini <br />
+        and sweet pepper
+      </h1>
+      <div class="card-footer1">
+        <span class="heart">♡</span>
+        <p class="button-5">30 min</p>
         <span class="dots">⋯</span>
+      </div>
     </div>
-  </div>
-    <div class="card-six">    
-    <img class="img6" src="/img/img6.png">
-    <h1>Noodles with shrimp and vegetables</h1>
-     <div class="card-footer2">
-       <span class="heart">♡</span>
-    <p class="button-6">35 min</p>
+
+    <div id="Modal5" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">
+          FUNCHOZA WITH CHICKEN, ZUCCHINI AND SWEET PEPPER
+        </h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>Funchoza – 100g</li>
+              <li>chicken fillet – 250g</li>
+              <li>zucchini - 100g</li>
+              <li>red bell pepper– 80g</li>
+              <li>yellow bell pepper – 100g</li>
+              <li>soy sause – 40 ml</li>
+              <li>sunflower oil – 30 ml</li>
+            </ul>
+          </div>
+          <div class="recipe-image">
+            <img
+              src="/img/img5.png"
+              alt="Funchoza with chicken, zucchini
+        and sweet pepper"
+            />
+          </div>
+        </div>
+        <!-- Приготовление -->
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+            Rinse the chicken fillet and dry it with a paper towel. Cut the fillet into thin strips.
+            </li>
+            <li>
+              Heat 1 tablespoon of oil in a deep frying pan or wok and add the chopped chicken meat. Pour in 20 ml of soy sauce.
+            </li>
+            <li>
+              While the chicken is cooking, cut the zucchini into thin strips.
+            </li>
+            <li>
+              Pour boiling water over the funchoza. Cover with a lid and leave for 4 minutes.
+            </li>
+            <li>Pour some vegetable oil into the frying pan, add chopped bell peppers, hot peppers and funchoza. Stir.</li>
+            <li>
+              Funchoza with chicken, zucchini and sweet pepper is ready to serve.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-six">
+      <img class="img6" src="/img/img6.png" />
+      <h1>Noodles with shrimp and vegetables</h1>
+      <div class="card-footer2">
+        <span class="heart">♡</span>
+        <p class="button-6">35 min</p>
         <span class="dots">⋯</span>
+      </div>
     </div>
-  </div>
-      <div class="card-seven">    
-    <img class="img7" src="/img/img7.png">
-    <h1>Cranberry Sparkler</h1>
-     <div class="card-footer2">
-       <span class="heart">♡</span>
-    <p class="button-7">15 min</p>
+
+ <div id="Modal6" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">
+        NOODLES WITH SHRIMP AND VEGETABLE
+        </h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>funchoza – 100g</li>
+              <li>chicken fillet – 250g</li>
+              <li>zucchini - 100g</li>
+              <li>red bell pepper– 80g</li>
+              <li>yellow bell pepper – 100g</li>
+              <li>soy sause – 40 ml</li>
+              <li>sunflower oil – 30 ml</li>
+            </ul>
+          </div>
+          <div class="recipe-image4">
+            <img
+              src="/img/img6.png"
+              alt="Funchoza with chicken, zucchini
+        and sweet pepper"
+            />
+          </div>
+        </div>
+        <!-- Приготовление -->
+        <div class="preparation4">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+            Rinse the chicken fillet and dry it with a paper towel. Cut the fillet into thin strips.
+            </li>
+            <li>
+              Heat 1 tablespoon of oil in a deep frying pan or wok and add the chopped chicken meat. Pour in 20 ml of soy sauce.
+            </li>
+            <li>
+              While the chicken is cooking, cut the zucchini into thin strips.
+            </li>
+            <li>
+              Pour boiling water over the funchoza. Cover with a lid and leave for 4 minutes.
+            </li>
+            <li>Pour some vegetable oil into the frying pan, add chopped bell peppers, hot peppers and funchoza. Stir.</li>
+            <li>
+              Funchoza with chicken, zucchini and sweet pepper is ready to serve.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-seven">
+      <img class="img7" src="/img/img7.png" />
+      <h1>Cranberry Sparkler</h1>
+      <div class="card-footer2">
+        <span class="heart">♡</span>
+        <p class="button-7">15 min</p>
         <span class="dots">⋯</span>
+      </div>
     </div>
-  </div>
-  <div class="card-eight">    
-    <img class="img8" src="/img/img8.png">
-    <h1>Cottage cheese cheesecake with blackberries</h1>
-     <div class="card-footer1">
-       <span class="heart">♡</span>
-    <p class="button-8">90 min</p>
+    <div class="card-eight">
+      <img class="img8" src="/img/img8.png" />
+      <h1>Cottage cheese cheesecake with blackberries</h1>
+      <div class="card-footer1">
+        <span class="heart">♡</span>
+        <p class="button-8">90 min</p>
         <span class="dots">⋯</span>
+      </div>
     </div>
-  </div>
-  <div class="card-nine">    
-    <img class="img9" src="/img/img9.png">
-    <h1>Chocolate milkshake</h1>
-     <div class="card-footer2">
-       <span class="heart">♡</span>
-    <p class="button-9">10 min</p>
+    <div class="card-nine">
+      <img class="img9" src="/img/img9.png" />
+      <h1>Chocolate milkshake</h1>
+      <div class="card-footer2">
+        <span class="heart">♡</span>
+        <p class="button-9">10 min</p>
         <span class="dots">⋯</span>
+      </div>
     </div>
   </div>
-</div>
 </html>
-
-
