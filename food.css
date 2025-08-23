@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: "Georgia", serif;
-  background: url("/img/pizza.png") center/cover no-repeat;
+  background: url("img/pizza.png") center/cover no-repeat;
   min-height: auto;
 }
 
