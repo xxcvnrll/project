@@ -60,6 +60,10 @@ body {
   line-height: 1.2;
   font-size: clamp(28px, 5.4vw, 52px);
   text-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  transition: text-shadow 0.5s ease;
+}
+ .promo:hover {
+  text-shadow: 0 5px 25px rgb(255, 255, 255);
 }
 
 .lead {
@@ -87,11 +91,20 @@ body {
   font-family: "Prociono", serif;
   font-size: 12px;
   font-weight: lighter;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .img1 {
   width: 340px;
   margin-top: 35px;
+}
+
+.card-one:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 25px rgb(104, 165, 92);
 }
 
 .button-1 {
@@ -104,11 +117,20 @@ body {
   border-radius: 12px;
   padding-left: 10px;
   text-align: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
 }
+
+.button-1:hover {
+  background-color: #649f64;
+  color: #000;
+
+}
+
 
 .card-footer1 {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   margin: 0px 50px 0;
 }
@@ -136,7 +158,10 @@ body {
   font-family: "Prociono", serif;
   font-size: 12px;
   text-align: center;
-    font-weight: lighter;
+  font-weight: lighter;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 
 }
 
@@ -156,11 +181,24 @@ body {
   margin-top: 90px;
   padding-left: 10px;
   text-align: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+.button-2:hover {
+  background-color: #b0b2b0;
+  color: #000;
+
+}
+
+.card-two:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 30px rgb(255, 255, 255);
 }
 
 .card-footer2 {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: baseline;
   margin: 0px 50px 0;
 }
@@ -173,11 +211,28 @@ body {
   font-family: "Prociono", serif;
   font-size: 12px;
   text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
 }
 
 .img3 {
   width: 340px;
   margin-top: 35px;
+}
+
+.button-3:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border:#000000;
+
+}
+
+.card-three:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 30px rgb(255, 0, 0);
 }
 
 .button-3 {
@@ -190,15 +245,15 @@ body {
   border-radius: 12px;
   padding-left: 10px;
   text-align: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
 }
 
 .card-four {
-  background: linear-gradient(
-    220deg,
-    rgb(185, 179, 63, 0.5) 0%,
-    #bcaf4e 40%,
-    rgba(255, 85, 13, 0.5) 90%
-  );
+  background: linear-gradient(220deg,
+      rgb(185, 179, 63, 0.5) 0%,
+      #bcaf4e 40%,
+      rgba(255, 85, 13, 0.5) 90%);
   width: 420px;
   margin-left: 60px;
   margin-top: 50px;
@@ -206,11 +261,20 @@ body {
   font-family: "Prociono", serif;
   font-size: 12px;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
 }
 
 .img4 {
   width: 275px;
   margin-top: -70px;
+}
+
+.card-four:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 30px rgb(255, 242, 0);
 }
 
 .button-4 {
@@ -224,22 +288,37 @@ body {
   padding-left: 10px;
   text-align: center;
   margin-top: 80px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.button-4:hover {
+  background-color: #c0b250;
+  color: #000;
 }
 
 .card-five {
-  background: linear-gradient(rgb(70, 158, 96,0.7),rgb(58, 89, 8, 0.8));
+  background: linear-gradient(rgb(70, 158, 96, 0.7), rgb(58, 89, 8, 0.8));
   width: 420px;
   margin-left: 60px;
   border-radius: 60px;
-    margin-top: 50px;
+  margin-top: 50px;
   font-family: "Prociono", serif;
   font-size: 12px;
   text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .img5 {
   width: 340px;
   margin-top: 35px;
+}
+
+.card-five:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 30px rgb(35, 230, 45);
 }
 
 .button-5 {
@@ -252,15 +331,19 @@ body {
   border-radius: 12px;
   padding-left: 10px;
   text-align: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.button-5:hover {
+  background-color: #389444;
+  color: #000;
 }
 
 .card-six {
-  background: linear-gradient(
-    to bottom,
-    rgb(8, 8, 8) 15%,
-    rgb(129, 4, 4) 55%,
-    rgb(255, 0, 0, 0.8) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgb(8, 8, 8) 15%,
+      rgb(129, 4, 4) 55%,
+      rgb(255, 0, 0, 0.8) 100%);
   width: 420px;
   margin-left: 60px;
   margin-top: 50px;
@@ -268,11 +351,20 @@ body {
   font-family: "Prociono", serif;
   font-size: 12px;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
 }
 
 .img6 {
   width: 275px;
   margin-top: -70px;
+}
+
+.card-six:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 30px rgb(0, 0, 0);
 }
 
 .button-6 {
@@ -286,14 +378,20 @@ body {
   padding-left: 10px;
   text-align: center;
   margin-top: 80px;
+        transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+.button-6:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: #000000;
 }
 
 .card-seven {
-  background: linear-gradient(
-    -150deg,
-    #7c45be 0%,
-    #1a9615cc 100%
-  );
+  background: linear-gradient(-150deg,
+      #7c45be 0%,
+      #1a9615cc 100%);
   width: 420px;
   margin-left: 60px;
   margin-top: 50px;
@@ -301,11 +399,20 @@ body {
   font-family: "Prociono", serif;
   font-size: 12px;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
 }
 
 .img7 {
   width: 200px;
   margin-top: -70px;
+}
+
+.card-seven:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 30px rgb(166, 93, 255);
 }
 
 .button-7 {
@@ -319,14 +426,19 @@ body {
   padding-left: 10px;
   text-align: center;
   margin-top: 80px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+.button-7:hover {
+  background-color: #46b079;
+  color: #000;
 }
 
 .card-eight {
-  background: linear-gradient(
-    to left,
-    rgb(30, 7, 124) 5%,
-    rgb(19, 0, 0) 100%
-  );
+  background: linear-gradient(to left,
+      rgb(30, 7, 124) 5%,
+      rgb(19, 0, 0) 100%);
   width: 420px;
   margin-left: 60px;
   border-radius: 60px;
@@ -336,11 +448,20 @@ body {
   font-weight: lighter;
   text-align: center;
   color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .img8 {
-   width: 340px;
+  width: 340px;
   margin-top: 35px;
+}
+
+.card-eight:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 30px rgb(45, 0, 223);
 }
 
 .button-8 {
@@ -354,14 +475,20 @@ body {
   padding-left: 10px;
   text-align: center;
   color: black;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+.button-8:hover {
+  background-color: rgb(37, 37, 155);
+  border:  #22067c;
+  color: #fff;
 }
 
 .card-nine {
-  background: linear-gradient(
-    to left,
-    #D49A49 0%,
-    #130000 100%
-  );
+  background: linear-gradient(to left,
+      #D49A49 0%,
+      #130000 100%);
   width: 420px;
   margin-left: 60px;
   margin-top: 50px;
@@ -370,11 +497,19 @@ body {
   font-size: 12px;
   text-align: center;
   color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .img9 {
   width: 200px;
   margin-top: -70px;
+}
+
+.card-nine:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 30px rgb(255, 106, 0);
 }
 
 .button-9 {
@@ -389,15 +524,22 @@ body {
   text-align: center;
   margin-top: 80px;
   color: #130000;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
 }
 
+.button-9:hover {
+  background-color: #ca9954;
+  border:#ca9954 ;
+  color: #000;
+}
 
 /* Модалка */
 .modal {
-  display: none; /* скрыта по умолчанию */
+  display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 1000;
   justify-content: center;
   align-items: center;
@@ -413,8 +555,8 @@ body {
   background: #fff;
   border-radius: 12px;
   padding: 20px 30px;
-  max-width: 900px; 
-   font-family: "Platypi";
+  max-width: 900px;
+  font-family: "Platypi";
   width: 100%;
   margin-top: 50px;
   margin-left: 20%;
@@ -423,7 +565,6 @@ body {
   position: relative;
 }
 
-/* Кнопка закрытия */
 .close {
   position: absolute;
   right: 10px;
@@ -432,7 +573,6 @@ body {
   cursor: pointer;
 }
 
-/* Заголовок */
 .recipe-title {
   text-align: center;
   background: #000;
@@ -444,12 +584,11 @@ body {
   font-size: 22px;
 }
 
-/* Контент (ингредиенты + картинка) */
 .recipe-body {
   display: flex;
-  justify-content: space-between; */
-  margin-bottom : 20px; 
-} 
+  justify-content: space-between;
+  */ margin-bottom: 20px;
+}
 
 .ingredients {
   flex: 1;
@@ -473,7 +612,6 @@ body {
   border-radius: 12px;
 }
 
-/* Блок приготовления */
 .preparation h2 {
   color: #800000;
   font-weight: bold;
@@ -494,11 +632,11 @@ body {
   border-radius: 12px;
 }
 
-h3{
+h3 {
   margin-top: -4px;
   margin-bottom: -8px;
   font-size: 18px;
-  color:#5b0101;
+  color: #5b0101;
 }
 
 .ingredients3 ul {
@@ -521,7 +659,7 @@ h3{
 }
 
 .preparation4 {
-line-height: 1.6;
+  line-height: 1.6;
 }
 
 .recipe-image4 img {
@@ -529,4 +667,23 @@ line-height: 1.6;
   margin-right: 30px;
   margin-top: -25px;
   border-radius: 12px;
+}
+
+.recipe-image5 img {
+  max-width: 250px;
+  margin-right: 30px;
+  margin-top: -25px;
+  border-radius: 12px;
+}
+
+.preparation5 h2 {
+  color: #800000;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: -20px;
+}
+
+.preparation5 {
+  line-height: 1.6;
 }
