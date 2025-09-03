@@ -1,45 +1,3 @@
-const searchInput = document.getElementById('searchInput');
-const searchBtn = document.getElementById('searchBtn');
-const recipeList = document.getElementById('recipeList');
-
-// Данные (массив рецептов)
-const recipes = [
-  "Greek soup with pumpkin",
-  "Italian pasta recipes",
-  "Chicken stir fry",
-  "Vegetarian salads",
-  "Dessert recipes",
-  "Healthy smoothies",
-  "Pizza recipes",
-  "Asian cuisine"
-];
-
-// Функция отрисовки списка
-function displayRecipes(list) {
-  recipeList.innerHTML = '';
-  list.forEach(item => {
-    const li = document.createElement('li');
-    li.textContent = item;
-    recipeList.appendChild(li);
-  });
-}
-
-// Поиск
-function performSearch() {
-  const query = searchInput.value.toLowerCase();
-  const filtered = recipes.filter(r => r.toLowerCase().includes(query));
-  displayRecipes(filtered);
-}
-
-// События
-searchBtn.addEventListener('click', performSearch);
-searchInput.addEventListener('input', performSearch);
-
-// При загрузке показываем все рецепты
-displayRecipes(recipes);
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(
     ".card-one, .card-two, .card-three, .card-four, .card-five, .card-six, .card-seven, .card-eight, .card-nine"
@@ -86,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.stopPropagation();
         console.log(`Dots clicked on ${card.className}`);
         openModal(modalId);
+        console.log("Modal opened")
       });
     } else {
       console.log(`No dots found in ${card.className}`);
