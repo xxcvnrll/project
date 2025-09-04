@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Paprika&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prociono&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 body {
   margin: 0;
@@ -11,14 +10,80 @@ body {
   min-height: auto;
 }
 
-.container {
+.logo {
+  width: 170px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #000;
+}
+
+.header {
   display: flex;
-  padding: 45px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  /* max-width: 1200px;
+  margin: 0 auto; */
+}
+
+a {
+  font-family: "Nata Sans", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  color: #534e4e;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.905);
+  text-shadow: #ffffff;
+  padding-bottom: 10px;
+  text-shadow: 0 10px 25px rgb(255, 255, 255);
+}
+
+.search-box {
+  background-color: transparent;
+  border: 1px solid#555;
+  border-radius: 65px;
+  padding: 5px 10px;
+  /* можно менять ширину */
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  /* текст белый на темном фоне */
+  font-size: 14px;
+}
+
+.search-box input::placeholder {
+  color: #aaa;
+  /* серый плейсхолдер */
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container {
+  /* max-width: 1200px;
+  margin: 0 auto; */
+  margin: 20px;
 }
 
 .blur-card {
   display: flex;
-  width: 1400px;
+  justify-content: space-around;
   height: 450px;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
@@ -27,9 +92,6 @@ body {
 }
 
 .images img {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 300px;
   height: 420px;
   margin-top: 25px;
@@ -44,14 +106,11 @@ body {
 }
 
 .text {
-  flex: 1;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 350px;
-  margin-left: 16%;
-  min-width: 500px;
+  max-width: 40%;
 }
 
 .promo {
@@ -62,7 +121,8 @@ body {
   text-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
   transition: text-shadow 0.5s ease;
 }
- .promo:hover {
+
+.promo:hover {
   text-shadow: 0 5px 25px rgb(255, 255, 255);
 }
 
@@ -79,13 +139,13 @@ body {
   padding-top: 60px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: center;
+  gap: 50px;
 }
 
 .card-one {
   background-color: #98cd8f;
   width: 420px;
-  margin-left: 60px;
   border-radius: 60px;
   text-align: center;
   font-family: "Prociono", serif;
@@ -118,15 +178,12 @@ body {
   padding-left: 10px;
   text-align: center;
   transition: background-color 0.5s ease, color 0.5s ease;
-
 }
 
 .button-1:hover {
   background-color: #649f64;
   color: #000;
-
 }
-
 
 .card-footer1 {
   display: flex;
@@ -136,10 +193,20 @@ body {
 }
 
 .heart {
-  font-size: 52px;
+  font-size: 50px;
   cursor: pointer;
-  transition: color 0.3s;
+}
+
+.heart::before {
+  content: "♡";
+  transition: color 0.3s ease, transform 0.2s ease;
   color: black;
+}
+
+.heart:hover::before {
+  content: "♥";
+  color: rgb(212, 207, 207);
+  transform: scale(1.1);
 }
 
 .dots {
@@ -147,13 +214,11 @@ body {
   cursor: pointer;
   transition: color 0.3s;
   color: black;
-
 }
 
 .card-two {
   background-color: #e8e8db;
   width: 420px;
-  margin-left: 60px;
   border-radius: 60px;
   font-family: "Prociono", serif;
   font-size: 12px;
@@ -162,7 +227,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-
 }
 
 .img2 {
@@ -182,13 +246,11 @@ body {
   padding-left: 10px;
   text-align: center;
   transition: background-color 0.5s ease, color 0.5s ease;
-
 }
 
 .button-2:hover {
   background-color: #b0b2b0;
   color: #000;
-
 }
 
 .card-two:hover {
@@ -206,7 +268,6 @@ body {
 .card-three {
   background: linear-gradient(#c01c1cca, #5b0101);
   width: 420px;
-  margin-left: 65px;
   border-radius: 60px;
   font-family: "Prociono", serif;
   font-size: 12px;
@@ -215,7 +276,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-
 }
 
 .img3 {
@@ -226,8 +286,7 @@ body {
 .button-3:hover {
   background-color: #000000;
   color: #ffffff;
-  border:#000000;
-
+  border: #000000;
 }
 
 .card-three:hover {
@@ -246,16 +305,16 @@ body {
   padding-left: 10px;
   text-align: center;
   transition: background-color 0.5s ease, color 0.5s ease;
-
 }
 
 .card-four {
-  background: linear-gradient(220deg,
-      rgb(185, 179, 63, 0.5) 0%,
-      #bcaf4e 40%,
-      rgba(255, 85, 13, 0.5) 90%);
+  background: linear-gradient(
+    220deg,
+    rgb(185, 179, 63, 0.5) 0%,
+    #bcaf4e 40%,
+    rgba(255, 85, 13, 0.5) 90%
+  );
   width: 420px;
-  margin-left: 60px;
   margin-top: 50px;
   border-radius: 60px;
   font-family: "Prociono", serif;
@@ -264,7 +323,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-
 }
 
 .img4 {
@@ -299,7 +357,6 @@ body {
 .card-five {
   background: linear-gradient(rgb(70, 158, 96, 0.7), rgb(58, 89, 8, 0.8));
   width: 420px;
-  margin-left: 60px;
   border-radius: 60px;
   margin-top: 50px;
   font-family: "Prociono", serif;
@@ -340,12 +397,13 @@ body {
 }
 
 .card-six {
-  background: linear-gradient(to bottom,
-      rgb(8, 8, 8) 15%,
-      rgb(129, 4, 4) 55%,
-      rgb(255, 0, 0, 0.8) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgb(8, 8, 8) 15%,
+    rgb(129, 4, 4) 55%,
+    rgb(255, 0, 0, 0.8) 100%
+  );
   width: 420px;
-  margin-left: 60px;
   margin-top: 50px;
   border-radius: 60px;
   font-family: "Prociono", serif;
@@ -354,7 +412,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-
 }
 
 .img6 {
@@ -378,8 +435,7 @@ body {
   padding-left: 10px;
   text-align: center;
   margin-top: 80px;
-        transition: background-color 0.5s ease, color 0.5s ease;
-
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .button-6:hover {
@@ -389,11 +445,8 @@ body {
 }
 
 .card-seven {
-  background: linear-gradient(-150deg,
-      #7c45be 0%,
-      #1a9615cc 100%);
+  background: linear-gradient(-150deg, #7c45be 0%, #1a9615cc 100%);
   width: 420px;
-  margin-left: 60px;
   margin-top: 50px;
   border-radius: 60px;
   font-family: "Prociono", serif;
@@ -402,7 +455,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-
 }
 
 .img7 {
@@ -427,7 +479,6 @@ body {
   text-align: center;
   margin-top: 80px;
   transition: background-color 0.5s ease, color 0.5s ease;
-
 }
 
 .button-7:hover {
@@ -436,11 +487,8 @@ body {
 }
 
 .card-eight {
-  background: linear-gradient(to left,
-      rgb(30, 7, 124) 5%,
-      rgb(19, 0, 0) 100%);
+  background: linear-gradient(to left, rgb(30, 7, 124) 5%, rgb(19, 0, 0) 100%);
   width: 420px;
-  margin-left: 60px;
   border-radius: 60px;
   margin-top: 50px;
   font-family: "Prociono", serif;
@@ -476,21 +524,17 @@ body {
   text-align: center;
   color: black;
   transition: background-color 0.5s ease, color 0.5s ease;
-
 }
 
 .button-8:hover {
   background-color: rgb(37, 37, 155);
-  border:  #22067c;
+  border: #22067c;
   color: #fff;
 }
 
 .card-nine {
-  background: linear-gradient(to left,
-      #D49A49 0%,
-      #130000 100%);
+  background: linear-gradient(to left, #d49a49 0%, #130000 100%);
   width: 420px;
-  margin-left: 60px;
   margin-top: 50px;
   border-radius: 60px;
   font-family: "Prociono", serif;
@@ -525,25 +569,24 @@ body {
   margin-top: 80px;
   color: #130000;
   transition: background-color 0.5s ease, color 0.5s ease;
-
 }
 
 .button-9:hover {
   background-color: #ca9954;
-  border:#ca9954 ;
+  border: #ca9954;
   color: #000;
 }
 
 /* Модалка */
 .modal {
-  display: none;
+  display: none; 
   position: fixed;
-  inset: 0;
+  inset: 0; 
   background: rgba(0, 0, 0, 0.7);
   z-index: 1000;
   justify-content: center;
   align-items: center;
-  overflow-y: auto;
+  padding: 20px;
 }
 
 .modal.show {
@@ -556,19 +599,17 @@ body {
   border-radius: 12px;
   padding: 20px 30px;
   max-width: 900px;
-  font-family: "Platypi";
   width: 100%;
-  margin-top: 50px;
-  margin-left: 20%;
-  background-color: rgba(169, 168, 168, 0.8);
-  color: #000;
+  max-height: 90vh;
+  overflow-y: auto; 
   position: relative;
+  margin: auto;
 }
 
 .close {
   position: absolute;
   right: 10px;
-  top: -20px;
+  top: 3px;
   font-size: 35px;
   cursor: pointer;
 }
@@ -587,7 +628,7 @@ body {
 .recipe-body {
   display: flex;
   justify-content: space-between;
-  */ margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .ingredients {

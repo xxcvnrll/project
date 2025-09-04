@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.stopPropagation();
         console.log(`Dots clicked on ${card.className}`);
         openModal(modalId);
+        console.log("Modal opened")
       });
     } else {
       console.log(`No dots found in ${card.className}`);

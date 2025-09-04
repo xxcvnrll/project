@@ -85,6 +85,8 @@ margin-top: 15px;
 font-size: 40px;
 font-weight: normal;
 }
+
+
 .heading{
 color: antiquewhite;
 font-weight: 500;
@@ -94,7 +96,7 @@ font-weight: 500;
 color: antiquewhite;
 font-weight: 300;
 }
-.soup{
+/* .soup{
   position: absolute;
   left: 500px;
   top: 80px;
