@@ -1,35 +1,864 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Cooking</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="header">
-      <img class="logo" src="img/logo.png" />
-      <a class="home" href="index.html">Home</a>
-      <a class="about" href="about.html">About</a>
-      <a class="foods" href="food.html">Foods</a>
-      <div class="search-box">
-        <input type="text" placeholder="Searching for ......" />
-        <button class="search-btn">🔍</button>
-      </div>
-      <a class="star" href="favorites.html">☆</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cooking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<header>
+  <div class="header">
+    <img class="logo" src="img/logo.png" />
+    <a class="home" href="index.html">Home</a>
+    <a class="about" href="about.html">About</a>
+    <a class="foods" href="food.html">Foods</a>
+    <form id="searchForm" class="search-box" role="search">
+      <input class="form-control" type="text" placeholder="Searching for ....." aria-label="Search" />
+      <button class="search-btn" type="submit">🔍</button>
+    </form>
+  </div>
+</header>
+
+<body>
+  <div class="content">
+    <h1 class="heading">Improve your cooking skills!</h1>
+    <p class="text">
+      Welcome to the world of taste, inspiration and <br>real pleasure! Cooking is more than just food; <br> We
+      believe that everyone can cook deliciously; <br> It doesn’t matter if you are an experienced chef <br> or just
+      starting out in the kitchen; With the right <br>recipe and a drop of inspiration, any dish <br>becomes a
+      masterpiece.
+    </p>
+    <div class="picture">
+      <img class="soup" src="./img/суп1.png" alt="">
+      <img class="meat" src="./img/мяса.png" alt="">
     </div>
-    <main>
-        <div class="main-wrapper">
-            <div class="content">
-                <h1 class = "heading">Improve your cooking skills!</h1>
-                <p class="text">
-                    Welcome to the world of taste, inspiration and real pleasure! <br> Cooking is more than just food; <br> We believe that everyone can cook deliciously; <br> It doesn’t matter if you are an experienced chef or just starting out in the kitchen; <br> With the right recipe and a drop of inspiration, any dish becomes a masterpiece.
-                </p>
+    <div class="picture2">
+      <img class="soup2" src="./img/суп2.png" alt="">
+      <img class="pancake" src="./img/панкейки.png" alt="">
+    </div>
+  </div>
+</body>
+<main>
+  <div class="cards">
+    <div class="card card-one">
+      <img class="img1" src="img/dp1.png" />
+      <h1>
+        STRUDEL WITH CHICKEN AND
+        MUSHROOMS
+      </h1>
+      <div class="card-footer1">
+        <span class="heart"></span>
+        <p class="button-1">120 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal1" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">
+          STRUDEL WITH CHICKEN AND
+          MUSHROOMS
+        </h1>
+        <div class="recipe-body">
+          <div class="ingredients">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>puff pastry – 1000g</li>
+              <li>chicken fillet – 700g</li>
+              <li>mushrooms – 700g</li>
+              <li>onion – 1 pcs</li>
+              <li>cheese – 250g</li>
+              <li>butter – 100g</li>
+            </ul>
           </div>
-            <img class = "soup" src="./img/суп1.png" alt="">
-            <img class = "meat" src="./img/мяса.png" alt="">
-            <img class = "soup2" src="./img/суп2.png" alt="">
-            <img class = "pancake" src="./img/панкейки.png" alt="">
+          <div class="recipe-image">
+            <img src="img/dp1.png" alt="" />
+          </div>
         </div>
-    </main>
-  </body>
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+              Chop the mushrooms and onions, salt them and fry in oil until
+              golden brown. Let cool.
+            </li>
+            <li>
+              Boil the chicken fillet in salted water, cut into small cubes
+              and add to the mushrooms.
+            </li>
+            <li>
+              Grate the cheese, mix with mushrooms and chicken. Add sour
+              cream.
+            </li>
+            <li>Melt the butter and spread it around the dough.</li>
+            <li>Wrap the dough into a roll, closing the edges.</li>
+            <li>
+              Bake in an oven preheated to 190 °C for 30–40 minutes until
+              golden brown.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-two">
+      <img class="img1" src="img/dp2.png" />
+      <h1>
+        CLASSIC CABBAGE ROOLLS<br>
+        WITH MEAT
+      </h1>
+      <div class="card-footer2">
+        <span class="heart"></span>
+        <p class="button-2">140 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal2" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">CLASSIC CABBAGE ROOLLS
+          WITH MEAT</h1>
+        <div class="recipe-body">
+          <div class="ingredients">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>White cabbage – 1 large head</li>
+              <li>Ground pork – 300 g</li>
+              <li>Rice (uncooked) – 150 g</li>
+              <li>Onion – 2 pcs</li>
+              <li>Carrot – 1 pc</li>
+              <li>Tomato paste – 3 tbsp</li>
+            </ul>
+          </div>
+          <div class="recipe-image2">
+            <img src="img/dp2.png" alt="" />
+          </div>
+        </div>
+
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+              Boil the whole cabbage head for a few minutes, carefully separate the leaves, and cut off thick veins.
+            </li>
+            <li>
+              Cook the rice until half-done. Mix with ground pork, beef, one chopped onion, garlic, salt, and pepper.
+            </li>
+            <li>
+              Place a spoonful of filling on each cabbage leaf, roll tightly, and fold in the sides.
+            </li>
+            <li>
+              Grate the carrot and chop the remaining onion. Sauté them in oil, add tomato paste and sour cream, and mix
+              with 200 ml water.
+            </li>
+            <li>
+              Place cabbage rolls in a pot, pour the sauce over, add bay leaves, cover with a plate (to keep rolls in
+              place), and simmer for 50–60 minutes on low heat.
+            </li>
+            <li>
+              Serve hot with fresh herbs and a dollop of sour cream. Enjoy!
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-three">
+      <img class="img1" src="img/dp3.png" />
+      <h1>
+        FRUIT FLAMBE WITH FROST
+      </h1>
+      <div class="card-footer3">
+        <span class="heart"></span>
+        <p class="button-3">20 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal3" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">FRUIT FLAMBE WITH FROST</h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>unsalted butter - 2tbsp</li>
+              <li>brown sugar - 1/4 cup </li>
+              <li>mixed fruits - 2 cups</li>
+              <li>rum (dark or light) - 1/4 cup</li>
+              <li>vanilla extract - 1 tbsp</li>
+              <li>Pinch of nutmeg</li>
+              <li>4 scoops vanilla ice cream</li>
+            </ul>
+          </div>
+          <div class="recipe-image">
+            <img src="img/dp3.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>Cut larger fruits into bite-sized pieces.</li>
+            <li>Have all ingredients measured and ready before starting to cook.</li>
+            <li>Place serving plates and ice cream scoops nearby for quick assembly.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-four">
+      <img class="img1" src="img/dp4.png" />
+      <h1>BERRY SOUFLE WITH <br>SOUR
+        MILK AND<br> CREAM CHEESE</h1>
+      <div class="card-footer4">
+        <span class="heart"></span>
+        <p class="button-4">30 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal4" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">BERRY SOUFLE WITH SOUR
+          MILK AND CREAM CHEESE</h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>1 cup mixed berries</li>
+              <li>1 cup sour milk</li>
+              <li>8 oz cream cheese, softened</li>
+              <li>4 large eggs, separated</li>
+              <li>1/2 cup granulated sugar</li>
+              <li>1/4 cup all-purpose flour</li>
+              <li>1 tsp vanilla extract</li>
+              <li>1/4 tsp salt</li>
+            </ul>
+          </div>
+          <div class="recipe-image2">
+            <img src="img/dp4.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation4">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>Preheat oven to 375°F (190°C).</li>
+            <li>Butter 6 ramekins and dust with sugar, tapping out excess.</li>
+            <li>If using frozen berries, thaw and drain excess liquid.</li>
+            <li>Puree 3/4 cup of the berries until smooth.</li>
+            <li>Chop remaining berries into small pieces.</li>
+            <li>In a large bowl, beat cream cheese until smooth.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-five">
+      <img class="img1" src="img/dp5.png" />
+      <h1>
+        PASTA IN TOMATO SAUSE
+      </h1>
+      <div class="card-footer3">
+        <span class="heart"></span>
+        <p class="button-5">40 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal5" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">
+          PASTA IN TOMATO SAUSE </h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>2 tbsp olive oil</li>
+              <li>1 medium onion, finely chopped</li>
+              <li>3 garlic cloves, minced</li>
+              <li>1 carrot, finely grated </li>
+              <li>2 cans whole peeled tomatoes</li>
+              <li>2 tbsp tomato paste</li>
+              <li>1 tsp sugar</li>
+              <li>Salt and black pepper to taste</li>
+          </div>
+          <div class="recipe-image">
+            <img src="img/dp5.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>Heat olive oil in a large pot or Dutch oven over medium heat.</li>
+            <li>Add chopped onion and cook until soft and translucent, about 5 minutes.</li>
+            <li>Add minced garlic and grated carrot (if using), and cook for another minute until fragrant.</li>
+            <li>Stir in tomato paste and cook for 1-2 minutes to deepen its flavor.</li>
+            <li>Add canned tomatoes with their juices, breaking them up with a wooden spoon.</li>
+            <li>Add salt to the boiling water, then add pasta and cook according to package directions until al dente.
+            </li>
+            <li>Serve immediately, garnished with fresh basil and grated Parmesan cheese.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-six">
+      <img class="img1" src="img/dp6.png" />
+      <h1>ITALIAN LASAGNA</h1>
+      <div class="card-footer5">
+        <span class="heart"></span>
+        <p class="button-6">35 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal6" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">ITALIAN LASAGNA</h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>Lasagna sheets – 12 pcs</li>
+              <li>Minced beef – 500g</li>
+              <li>Tomato sauce – 400ml</li>
+              <li>Butter – 50g</li>
+              <li>Flour – 2 tbsp</li>
+              <li>Milk – 500ml</li>
+              <li>Mozzarella – 200g</li>
+              <li>Salt, pepper, nutmeg – to taste</li>
+            </ul>
+          </div>
+          <div class="recipe-image">
+            <img src="img/dp6.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation4">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+              Heat olive oil in a pan, add chopped onion and garlic, fry until soft,
+              then add minced beef and cook until browned.
+            </li>
+            <li>
+              Stir in tomato sauce, season with salt and pepper, simmer for 15 minutes.
+            </li>
+            <li>
+              In another saucepan, melt butter, add flour and cook briefly, then whisk in milk
+              to make a béchamel sauce. Season with nutmeg, salt and pepper.
+            </li>
+            <li>
+              In a baking dish, layer lasagna sheets, meat sauce, béchamel, and grated cheese.
+              Repeat layers until ingredients are used up.
+            </li>
+            <li>
+              Finish with a layer of béchamel and mozzarella on top. Bake at 180°C (350°F)
+              for 35–40 minutes until golden and bubbly.
+            </li>
+            <li>
+              Let it rest for 10 minutes before serving. Sprinkle with Parmesan and enjoy!
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-seven">
+      <img class="img1" src="img/dp7.png" />
+      <h1>CLASSIC CAESAR</h1>
+      <div class="card-footer5">
+        <span class="heart"></span>
+        <p class="button-7">25 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal7" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">CLASSIC CAESAR</h1>
+        <div class="recipe-body1">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>Romaine lettuce – 1 head</li>
+              <li>Chicken breast – 300 g</li>
+              <li>Baguette (for croutons) – 150 g</li>
+              <li>Parmesan cheese – 50 g</li>
+              <li>Olive oil – 3 tbsp</li>
+              <li>Garlic – 2 cloves</li>
+              <li>Lemon juice – 2 tbsp</li>
+              <li>Egg yolk – 1</li>
+              <li>Salt and pepper – to taste</li>
+            </ul>
+          </div>
+          <div class="recipe-image2">
+            <img src="img/dp7.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation5">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+              Cut the baguette into cubes, sprinkle with olive oil and garlic, then bake until golden brown to make
+              croutons.
+            </li>
+            <li>
+              Season the chicken breast with salt and pepper, fry or grill until fully cooked, then slice into strips.
+            </li>
+            <li>
+              Prepare the dressing: mix egg yolk, lemon juice, minced garlic, Worcestershire sauce and olive oil until
+              creamy.
+            </li>
+            <li>
+              Tear the romaine lettuce into large pieces, place in a bowl and add the dressing. Mix gently.
+            </li>
+            <li>
+              Add chicken, croutons and grated Parmesan on top. Serve immediately.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-eight">
+      <img class="img1" src="img/dp8.png" />
+      <h1>CHINESE SWEET AND<br>
+        SOUR BBQ CHICKEN</h1>
+      <div class="card-footer1">
+        <span class="heart"></span>
+        <p class="button-8">30 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal8" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">
+          CHINESE SWEET AND
+          SOUR BBQ CHICKEN
+        </h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>Chicken thighs or breast – 600 g</li>
+              <li>Red bell pepper – 1 pc</li>
+              <li>Onion – 1 pc</li>
+              <li>Soy sauce – 3 tbsp</li>
+              <li>Ketchup – 4 tbsp</li>
+              <li>Olive oil – 2 tbsp</li>
+              <li>Salt and pepper – to taste</li>
+            </ul>
+          </div>
+          <div class="recipe-image">
+            <img src="img/dp8.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+              Cut the chicken into bite-sized pieces, season with salt and pepper, and fry in a hot pan until golden.
+            </li>
+            <li>
+              In the same pan, sauté garlic, onion, and bell pepper for 3–4 minutes.
+            </li>
+            <li>
+              Add pineapple chunks and stir briefly.
+            </li>
+            <li>
+              In a bowl, mix soy sauce, ketchup, rice vinegar, brown sugar, and cornstarch dissolved in a little water.
+              Pour into the pan.
+            </li>
+            <li>
+              Return the chicken to the pan, mix everything well, and simmer for 5–7 minutes until the sauce thickens.
+            </li>
+            <li>
+              Sprinkle with sesame seeds and chopped green onion before serving. Serve hot with steamed rice.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-nine">
+      <img class="img1" src="img/dp9.png" />
+      <h1>RASPBERRY-STRAWBERRY
+        CHEESECAKE</h1>
+      <div class="card-footer2">
+        <span class="heart"></span>
+        <p class="button-9">15 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal9" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">RASPBERRY-STRAWBERRY
+          CHEESECAKE</h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>Digestive biscuits – 200 g</li>
+              <li>Butter (melted) – 80 g</li>
+              <li>Cream cheese – 500 g</li>
+              <li>Sugar – 150 g</li>
+              <li>Fresh raspberries – 150 g</li>
+              <li>Fresh strawberries – 150 g</li>
+              <li>Gelatin – 10 g</li>
+              <li>Water – 50 ml</li>
+            </ul>
+          </div>
+          <div class="recipe-image2">
+            <img src="img/dp9.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation4">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+              Combine ice cream, milk and chocolate sauce in a blender and
+              blend until combined
+            </li>
+            <li>
+              I like my shakes really thick, but if you need to thin it, add
+              a little more milk.
+            </li>
+            <li>Top with whipped cream.</li>
+            <li>And add one cherries.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-ten">
+      <img class="img1" src="img/dp11.png" />
+      <h1>
+        LAZY COTTAGE CHEESE
+        DUMPLINGS
+      </h1>
+      <div class="card-footer1">
+        <span class="heart"></span>
+        <p class="button-10">40 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal10" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">
+          LAZY COTTAGE CHEESE
+          DUMPLINGS
+        </h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>2 cups cottage cheese</li>
+              <li>2 large eggs</li>
+              <li>1 cup all-purpose flour</li>
+              <li>3 tbsp semolina or farina</li>
+              <li>1/2 tsp salt</li>
+              <li>1 tbsp sugar</li>
+              <li>Butter for serving</li>
+            </ul>
+          </div>
+          <div class="recipe-image">
+            <img src="img/dp11.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>In a large bowl, combine cottage cheese, eggs, and salt. Mix well.</li>
+            <li>Gradually add flour and semolina, stirring until a soft dough forms. The dough should be sticky but
+              manageable.</li>
+            <li>Bring a large pot of salted water to a gentle boil.</li>
+            <li>Using two spoons, scoop up portions of dough and drop them into the boiling water. Alternatively, you
+              can form dumplings with floured hands.</li>
+            <li>Cook the dumplings in batches without overcrowding the pot. They are ready when they float to the
+              surface .</li>
+            <li>Using a slotted spoon, remove dumplings from water and transfer to a serving plate.</li>
+            <li>Serve immediately with your choice of toppings.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-eleven">
+      <img class="img1" src="img/dp12.png" />
+      <h1>
+        RATATOUILLE
+      </h1>
+      <div class="card-footer4">
+        <span class="heart"></span>
+        <p class="button-11">45 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal11" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">RATATOUILLE</h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>2 eggplants, diced</li>
+              <li>3 zucchinis, sliced</li>
+              <li>2 yellow squashes, sliced</li>
+              <li>2 bell peppers (red and yellow), diced</li>
+              <li>4 tomatoes, peeled and chopped</li>
+              <li>2 onions, sliced</li>
+              <li>4 cloves garlic, minced</li>
+            </ul>
+          </div>
+          <div class="recipe-image2">
+            <img src="img/dp12.png" alt="" />
+          </div>
+        </div>
+
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>Prepare all vegetables as directed. Salt the eggplant and let it sit for 20 minutes to draw out
+              bitterness, then rinse and pat dry.</li>
+            <li>Heat 2 tablespoons of olive oil in a large Dutch oven or heavy-bottomed pot over medium heat.</li>
+            <li>Add onions and cook until softened, about 5 minutes.</li>
+            <li>Add bell peppers and cook for 5 minutes until they begin to soften.</li>
+            <li>Stir in herbs, salt, and pepper. Drizzle with remaining olive oil.</li>
+            <li>Cover and simmer over low heat for 30-40 minutes, stirring occasionally, until all vegetables are
+              tender.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-twelve">
+      <img class="img1" src="img/dp13.png" />
+      <h1>
+        VAMPIRE PASSION SMOOTHIE
+      </h1>
+      <div class="card-footer1">
+        <span class="heart"></span>
+        <p class="button-12">10 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal12" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">VAMPIRE PASSION SMOOTHIE</h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>1 cup frozen strawberries, raspberries</li>
+              <li>1 small beet, peeled and chopped </li>
+              <li>1 ripe banana</li>
+              <li>1/2 cup pomegranate juice</li>
+              <li>1/4 cup vanilla yogurt</li>
+            </ul>
+          </div>
+          <div class="recipe-image">
+            <img src="img/dp13.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>Prepare all ingredients. If using fresh beet, steam it for 10 minutes to soften slightly.</li>
+            <li>Add pomegranate juice to the blender first, followed by yogurt.</li>
+            <li>Add frozen berries, chopped beet, and banana.</li>
+            <li>Blend on high until smooth and creamy. If too thick, add a splash more juice or water.</li>
+            <li>Add chia seeds and pulse a few times to combine but not fully blend (to maintain texture).</li>
+            <li>Taste and add sweetener if desired. For extra blood-red color, add a drop or two of red food coloring.
+            </li>
+            <li>Pour into glasses and serve immediately with spooky garnishes.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-thirteen">
+      <img class="img3" src="img/dp14.png" />
+      <h1>LOWER PIE WITH PEACHES</h1>
+      <div class="card-footer2">
+        <span class="heart"></span>
+        <p class="button-13">45 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal13" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">LOWER PIE WITH PEACHES</h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>6 cups fresh peaches, peeled and sliced</li>
+              <li>⅓ cup honey or maple syrup</li>
+              <li>2 tablespoons cornstarch or arrowroot powder</li>
+              <li>1 teaspoon vanilla extract</li>
+              <li>1 teaspoon cinnamon</li>
+              <li>¼ teaspoon nutmeg</li>
+              <li>1 tablespoon lemon juice</li>
+          </div>
+          <div class="recipe-image2">
+            <img src="img/dp14.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation4">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>Make the crust: In a medium bowl, whisk together whole wheat flour and salt</li>
+            <li>Add cold water, one tablespoon at a time, until dough comes together</li>
+            <li>Press dough into a ball and roll out between two sheets of parchment paper</li>
+            <li>Prepare filling: In a large bowl, combine sliced peaches, honey/maple syrup, cornstarch, vanilla,
+              cinnamon, and nutmeg</li>
+            <li>If making a full top crust or lattice, roll out remaining dough and place over filling</li>
+            <li>Make several slits in the top crust to allow steam to escape</li>
+            <li>Bake for 40-50 minutes, until crust is golden and filling is bubbly</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-fourteen">
+      <img class="img1" src="img/dp15.png" />
+      <h1>
+        CHOCOLATE FONDANT <br>WITH
+        ICE CREAM
+      </h1>
+      <div class="card-footer1">
+        <span class="heart"></span>
+        <p class="button-14">20 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal14" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">
+          CHOCOLATE FONDANT WITH
+          ICE CREAM </h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>1/2 cup unsalted butter, plus extra for greasing</li>
+              <li>1/2 cup dark chocolate</li>
+              <li>2 large eggs</li>
+              <li>2 large egg yolks</li>
+              <li>1/4 cup granulated sugar</li>
+              <li>2 tbsp all-purpose flour</li>
+              <li>Cocoa powder for dusting</li>
+            </ul>
+          </div>
+          <div class="recipe-image">
+            <img src="img/dp15.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation">
+          <h2>PREPARATION:</h2>
+          <ol>
+            <li>
+              Place the chicken, one onion, one carrot, and celery in a
+              saucepan. Cover with water.
+            </li>
+            <li>
+              Bring to a boil, simmer chicken broth for 1.5 hours with lid
+              on.
+            </li>
+            <li>
+              To prepare the noodles, beat 6 egg yolks and 1 egg with a
+              whisk, adding salt and water.
+            </li>
+            <li>
+              Place the dough on a board and knead for 8-10 minutes until
+              smooth.
+            </li>
+            <li>
+              Disassemble and lay out the noodles on a board and leave to
+              dry for 20-30 minutes.
+            </li>
+            <li>
+              Cut the second onion into cubes and the remaining carrots into
+              strips.
+            </li>
+            <li>
+              Add chopped carrots and onions to the broth. Add bay leaf,
+              peppercorns and salt. Cook over low heat for 10 minutes.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-fiveteen">
+      <img class="img1" src="img/dp16.png" />
+      <h1>LOWER PIE WITH PEACHES</h1>
+      <div class="card-footer2">
+        <span class="heart"></span>
+        <p class="button-13">45 min</p>
+        <span class="dots">⋯</span>
+      </div>
+    </div>
+
+    <div id="Modal15" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="recipe-title">LOWER PIE WITH PEACHES</h1>
+        <div class="recipe-body">
+          <div class="ingredients3">
+            <h2>INGREDIENTS:</h2>
+            <ul>
+              <li>6 cups fresh peaches, peeled and sliced</li>
+              <li>2 tablespoons cornstarch or arrowroot powder</li>
+              <li>1 teaspoon vanilla extract</li>
+              <li>1 teaspoon cinnamon</li>
+              <li>1 tablespoon lemon juice</li>
+            </ul>
+          </div>
+          <div class="recipe-image2">
+            <img src="img/dp16.png" alt="" />
+          </div>
+        </div>
+        <div class="preparation4">
+          <h2>PREPARATION:</h2>
+          <ol>
+             <li>Preheat oven to 375°F (190°C).</li>
+            <li>Prepare a 9-inch pie dish.</li>
+            <li>Peel and slice peaches, then toss with lemon juice to prevent browning.</li>
+            <li>Add oil and mix with a fork until crumbly.</li>
+            <li>Add cold water, one tablespoon at a time, until dough comes together.</li>
+            <li>Toss gently until peaches are evenly coated.</li>
+            <li>Brush top with milk and sprinkle with coarse sugar if desired.</li>
+            <li>Bake for 40-50 minutes, until crust is golden and filling is bubbly.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+<script src="food.js"></script>
+<script src="foodSearch.js"></script>
+
 </html>

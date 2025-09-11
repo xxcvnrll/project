@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(
-    ".card-one, .card-two, .card-three, .card-four, .card-five, .card-six, .card-seven, .card-eight, .card-nine"
+    ".card-one, .card-two, .card-three, .card-four, .card-five, .card-six, .card-seven, .card-eight, .card-nine, .card-ten, .card-eleven, .card-twelve, .card-thirteen, .card-fourteen, .card-fiveteen"
   );
   const modals = document.querySelectorAll("[id^='Modal']");
   const closeBtns = document.querySelectorAll(".close");
@@ -25,15 +25,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const dots = card.querySelector(".dots");
 
     let modalId;
-    if (index === 0) modalId = "Modal1"; // card-one -> Modal1
-    else if (index === 1) modalId = "Modal2"; // card-two -> Modal2
-    else if (index === 2) modalId = "Modal3"; // card-three -> Modal3
-    else if (index === 3) modalId = "Modal4"; // card-four -> Modal4
-    else if (index === 4) modalId = "Modal5"; // card-five -> Modal5
-    else if (index === 5) modalId = "Modal6"; // card-six -> Modal6
-    else if (index === 6) modalId = "Modal7"; // card-seven -> Modal7
-    else if (index === 7) modalId = "Modal8"; // card-eight -> Modal8
-    else if (index === 8) modalId = "Modal9"; // card-nine -> Modal9
+    if (index === 0) modalId = "Modal1"; 
+    else if (index === 1) modalId = "Modal2"; 
+    else if (index === 2) modalId = "Modal3";
+    else if (index === 3) modalId = "Modal4"; 
+    else if (index === 4) modalId = "Modal5"; 
+    else if (index === 5) modalId = "Modal6"; 
+    else if (index === 6) modalId = "Modal7"; 
+    else if (index === 7) modalId = "Modal8";
+    else if (index === 8) modalId = "Modal9"; 
+    else if (index === 9) modalId = "Modal10";
+    else if (index === 10) modalId = "Modal11";
+    else if (index === 11) modalId = "Modal12"; 
+    else if (index === 12) modalId = "Modal13"; 
+    else if (index === 13) modalId = "Modal14";
+    else if (index === 14) modalId = "Modal15"; 
+
     else modalId = "Modal1";
 
     console.log(`Card ${index + 1} (${card.className}) dots -> ${modalId}`);
