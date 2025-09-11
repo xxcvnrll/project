@@ -96,23 +96,28 @@ font-weight: 500;
 color: antiquewhite;
 font-weight: 300;
 }
-/* .soup{
+ .soup{
   position: absolute;
   left: 500px;
   top: 80px;
+  width: 400px;
 }
 .meat{
   position: absolute;
   right: 400px;
   top: 80px;
+  width: 400px;
+  height: 600px;
 }
 .soup2{
   position: absolute;
   left: 50px;
   bottom: 20px;
+  width: 600px;
 }
 .pancake{
   position: absolute;
   right: 90px;
   bottom: 20px;
+  width: 600px;
 } 
