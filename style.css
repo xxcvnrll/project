@@ -203,7 +203,7 @@ a:hover {
 }
 
 .heart:hover::before {
-  content: "♥";
+  content: "♥️";
   color: rgb(212, 207, 207);
   transform: scale(1.1);
 }
